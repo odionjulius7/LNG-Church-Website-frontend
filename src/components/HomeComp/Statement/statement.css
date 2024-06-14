@@ -1,0 +1,55 @@
+.h-statement {
+  min-height: 400px;
+  color: #000;
+  padding: 50px;
+  background-color: #f5f5f5; /* Lighter background color */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.h-statement h2 {
+  color: #ff6600;
+  font-size: 2.5rem; /* Slightly smaller font size for balance */
+  margin-bottom: 20px; /* Add some space below the heading */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.h-statement .wrapp {
+  border-left: 4px solid #ff6600; /* Add a border to the left side */
+  padding-left: 20px; /* Add some padding to the left */
+}
+
+.h-statement p {
+  color: #000;
+  font-size: 16px; /* Slightly smaller font size for body text */
+  line-height: 1.8; /* Increase line height for better readability */
+  margin-bottom: 20px; /* Add some space below the paragraph */
+  animation: fadeIn 1s ease-in-out;
+}
+
+.h-statement span {
+  color: #000;
+  font-size: 14px;
+  font-style: italic;
+  display: block; /* Make sure the span is a block element for consistent spacing */
+  margin-top: 20px; /* Add some space above the italic text */
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Optional: Add a box shadow to the wrapper */
+.h-statement .wrapp {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Optional: Add a hover effect to the wrapper */
+.h-statement .wrapp:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}

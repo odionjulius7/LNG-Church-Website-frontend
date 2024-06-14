@@ -1,0 +1,72 @@
+/* Upcoming Event */
+.h-upcoming {
+  min-height: 425px;
+  padding: 135px !important;
+  background-color: black;
+  color: #fff;
+  /* padding: 20px; */
+  clip-path: circle(67.5% at 56% 31%);
+}
+
+.h-upcoming h3 {
+  color: #e54626 !important;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.h-upcoming p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding-right: 80px;
+}
+
+.h-hr {
+  background-color: #e54626;
+  height: 5px;
+  border: none;
+  width: 70%;
+}
+
+.h-upcoming h2 {
+  font-size: 50px;
+}
+
+.h-upcoming .img-fluid {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.h-upcoming .h-img {
+  outline: 4px solid #e54626;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* CSS Animation */
+.animated-slide {
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carousel-indicators {
+  bottom: -6rem !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: none !important;
+}
+
+.carousel-control-next-icon {
+  background-image: none !important;
+}

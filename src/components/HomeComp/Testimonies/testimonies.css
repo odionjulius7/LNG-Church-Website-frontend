@@ -1,0 +1,75 @@
+.h-testimony {
+  min-height: 400px;
+  padding: 60px;
+}
+
+.h-testimony {
+  overflow: hidden;
+}
+
+.testimony-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.testimony-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimony-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimony-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border: 4px solid #e54626;
+}
+
+.testimony-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.testimony-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e54626;
+}
+
+/* Customize slick-slider */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -5px;
+}
+
+.slick-next {
+  right: -5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #e54626;
+}
+
+.slick-dots li button:before {
+  color: #e54626;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #e54626;
+}

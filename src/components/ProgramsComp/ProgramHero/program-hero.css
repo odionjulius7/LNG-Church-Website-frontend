@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+.program-hero {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.program-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.program-main-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.program-main-subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.program-content {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.program-sidebar {
+  width: 30%;
+  background-color: #2c3e50;
+  padding: 30px 0;
+}
+
+.program-button {
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  background: none;
+  border: none;
+  text-align: left;
+  color: #ecf0f1;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.program-button:hover {
+  background-color: #34495e;
+}
+
+.program-button.active {
+  background-color: #3498db;
+  font-weight: 600;
+}
+
+.program-details {
+  width: 70%;
+  padding: 40px;
+}
+
+.program-details h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.program-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.program-info {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.info-icon {
+  font-size: 1.2rem;
+  color: #3498db;
+  margin-right: 10px;
+}
+
+.join-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.join-button:hover {
+  background-color: #2980b9;
+}
+
+.button-icon {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .program-content {
+    flex-direction: column;
+  }
+
+  .program-sidebar,
+  .program-details {
+    width: 100%;
+  }
+}
