@@ -1,6 +1,8 @@
+"use client";
 import axios from "axios";
 
 const tk = localStorage.getItem("LMS_token");
+// const tk = typeof window !== "undefined" ? localStorage.getItem("LMS_token") : null;
 
 let authorizationHeader = {};
 if (tk) {
