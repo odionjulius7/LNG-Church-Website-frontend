@@ -9,7 +9,7 @@ export default function AdminFooter() {
         textAlign: "center",
       }}
     >
-      Sophis' Dev ©{new Date().getFullYear()} Created by Julius
+      Sophis&apos; Dev &copy;{new Date().getFullYear()} Created by Julius
     </Footer>
   );
 }

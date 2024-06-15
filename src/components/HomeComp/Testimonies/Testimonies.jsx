@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./testimonies.css";
+import Image from "next/image";
 
 const Testimonies = () => {
   const settings = {
@@ -41,10 +42,12 @@ const Testimonies = () => {
         {testimonies.map((testimony, index) => (
           <div key={index} className="px-3">
             <div className="testimony-card">
-              <img
+              <Image
                 src={testimony.image}
                 alt={`Testimony ${index + 1}`}
                 className="testimony-image"
+                width={100}
+                height={100}
               />
               <div className="testimony-content">
                 <p className="testimony-text">{testimony.text}</p>

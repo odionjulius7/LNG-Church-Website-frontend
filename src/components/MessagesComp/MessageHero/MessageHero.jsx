@@ -1,41 +1,38 @@
 "use client";
 import React, { useState } from "react";
-
+import Image from "next/image";
 import "./message-hero.css";
 
 const MessageHero = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const handleVideoClick = (video) => {
-    setSelectedVideo(video);
-    setIsModalOpen(true);
-  };
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setSelectedVideo(null);
-  };
-  //
   // Replace these with your actual YouTube video IDs
   const videoIds = [
     { id: "n39zvuV-7gA", category: "Sunday Sermon" },
     { id: "c2XEhqRaLpQ", category: "Sunday Sermon" },
     { id: "7u0tYKKSy7c", category: "Midweek Service" },
-    { id: "7u0tYKKSy7c", category: "Midweek Service" },
-    { id: "7u0tYKKSy7c", category: "Sunday Sermon" },
     // Add more videos with their respective categories
   ];
-
-  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredVideos =
     selectedCategory === "All"
       ? videoIds
       : videoIds.filter((video) => video.category === selectedCategory);
 
+  const handleVideoClick = (video) => {
+    setSelectedVideo(video);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedVideo(null);
+  };
+
   return (
     <>
-      {" "}
       <div className="message-hero">
         <div className="container">
           <div className="hero-content">
@@ -75,7 +72,7 @@ const MessageHero = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-9 ">
+            <div className="col-md-9">
               <div className="video-gallery d-flex justify-content-start">
                 {filteredVideos.map((video) => (
                   <div
@@ -83,12 +80,17 @@ const MessageHero = () => {
                     key={video.id}
                     onClick={() => handleVideoClick(video)}
                   >
-                    <img
-                      src={`https://img.youtube.com/vi/${video.id}/0.jpg`}
-                      alt={`Thumbnail for ${video.category}`}
-                    />
-                    <div className="video-overlay">
-                      <span>&#9658;</span>
+                    <div className="image-container">
+                      <Image
+                        src={`https://img.youtube.com/vi/${video.id}/0.jpg`}
+                        alt={`Thumbnail for ${video.category}`}
+                        className="video-thumbnail"
+                        width={100}
+                        height={80}
+                      />
+                      <div className="video-overlay">
+                        <span>&#9658;</span>
+                      </div>
                     </div>
                   </div>
                 ))}

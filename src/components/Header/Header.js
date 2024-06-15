@@ -13,6 +13,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { resetState } from "@/features/user/useSlice";
 
 import "./header.css";
+import Image from "next/image";
 // import { useEffect } from "react";
 
 export default function Header() {
@@ -42,11 +43,15 @@ export default function Header() {
           href="/"
           className="footer-heading-color fs-bold fs-3 d-flex align-items-center"
         >
-          <img
+          <Image
             src="/images/avatars/logo.png"
+            alt="logo"
+            width={160}
+            height={40} // Adjust this value based on your logo's aspect ratio
             className="me-3"
             style={{
-              width: "160px",
+              maxWidth: "100%",
+              height: "auto",
             }}
           />
           {/* LoveNetwork */}

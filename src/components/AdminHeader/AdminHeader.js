@@ -4,7 +4,7 @@ import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { Layout, Button } from "antd";
 const { Header } = Layout;
 
-export default function (props) {
+export default function AdminHeader(props) {
   const { collapsed, setCollapsed } = props;
 
   return (
@@ -29,3 +29,4 @@ export default function (props) {
     </Header>
   );
 }
+AdminHeader.displayName = "AdminHeader";

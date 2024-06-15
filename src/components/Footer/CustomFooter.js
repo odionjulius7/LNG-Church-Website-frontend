@@ -16,6 +16,7 @@ import CustomButton from "../common/CustomButton";
 import CustomInput from "../common/CustomInput";
 import Link from "next/link";
 import { Container } from "react-bootstrap";
+import Image from "next/image";
 
 export default function CustomFooter() {
   return (
@@ -24,10 +25,16 @@ export default function CustomFooter() {
         <Row className="justify-content-around py-5">
           <Col md={4} sm={6} xs={12} className="mb-4">
             <div className="footer-logo d-flex flex-column gap-3">
-              <img
+              <Image
                 src="/images/avatars/logo.png"
                 alt="Logo"
                 className="footer-img mb-4"
+                width={160}
+                height={40} // Adjust this value based on your logo's aspect ratio
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               />
               <p className="text-light">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
