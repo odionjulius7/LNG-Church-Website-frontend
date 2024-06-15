@@ -8,7 +8,7 @@ const Request = () => {
       <div className="row g-0 h-request">
         <div className="col-md-4 h-request-1">
           <div className="h-request-content">
-            <p className="mb-2">WE'RE GRATEFUL</p>
+            <p className="mb-2">WE&apos;RE GRATEFUL</p>
             <h3 className="mb-4">SHARE TESTIMONIES</h3>
             <CustomButton
               title="SHARE WITH US"
@@ -20,7 +20,7 @@ const Request = () => {
         </div>
         <div className="col-md-4 h-request-2">
           <div className="h-request-content">
-            <p className="mb-2">WE'RE LEARNING</p>
+            <p className="mb-2">WE&apos;RE LEARNING</p>
             <h3 className="mb-4">ACQUIRE SKILLS</h3>
             <CustomButton
               title="CONNECT EHUB"

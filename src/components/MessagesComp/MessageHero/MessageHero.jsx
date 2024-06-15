@@ -85,8 +85,8 @@ const MessageHero = () => {
                         src={`https://img.youtube.com/vi/${video.id}/0.jpg`}
                         alt={`Thumbnail for ${video.category}`}
                         className="video-thumbnail"
-                        width={100}
-                        height={80}
+                        width={200}
+                        height={200}
                       />
                       <div className="video-overlay">
                         <span>&#9658;</span>

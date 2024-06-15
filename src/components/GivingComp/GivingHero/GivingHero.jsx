@@ -51,7 +51,7 @@ const GivingHero = () => {
         <p className="subtitle">
           Giving; a joyful response to a life changed by the gospel.
         </p>
-        <h1 className="title">Support The Ministry's Work</h1>
+        <h1 className="title">Support The Ministry&apos;s Work</h1>
         <p>
           Choose your preferred method of giving and account type to receive the
           account number.
@@ -124,7 +124,8 @@ const GivingHero = () => {
 
         {prayerSubmitted && (
           <p className="success-message">
-            Your prayer request has been submitted. We'll be praying for you!
+            Your prayer request has been submitted. We&apos;ll be praying for
+            you!
           </p>
         )}
       </div>

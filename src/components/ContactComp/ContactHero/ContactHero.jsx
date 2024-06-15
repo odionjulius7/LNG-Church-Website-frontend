@@ -14,7 +14,9 @@ const ContactHero = () => {
       <div className="container">
         <div className="hero-content">
           <h1>Get in Touch</h1>
-          <p>We'd love to hear from you. Here's how you can reach us...</p>
+          <p>
+            We&apos;d love to hear from you. Here&apos;s how you can reach us...
+          </p>
         </div>
 
         <div className="contact-wrapper">
