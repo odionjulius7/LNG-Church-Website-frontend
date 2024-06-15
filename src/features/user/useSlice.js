@@ -1,7 +1,9 @@
 import { createAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import authUserService from "./userService";
+import Cookies from "js-cookie";
 
-const userFromLocalStorage = localStorage.getItem("LMS_token") || null;
+// const userFromLocalStorage = localStorage.getItem("LMS_token") || null;
+const userFromLocalStorage = Cookies.get("Bearer") || null;
 
 const initialState = {
   user: userFromLocalStorage,
